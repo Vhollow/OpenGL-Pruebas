@@ -82,7 +82,7 @@ void Reshape(int w, int h)
 void Display()
 {
 	glLoadIdentity();
-	glLookAt(0.0,1.0,6.0,
+	gluLookAt(0.0,1.0,6.0,
 		0.0,0.0,0.0,
 		0.0,1.0,0.0
 	);
@@ -116,7 +116,7 @@ void Display()
 int main(int argc,char** argv)
 {
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_AGB | GLUT_DEPTH);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_DEPTH);
 	glutInitWindowSize(1024,768);
 	glutInitWindowPosition(100,150);
 	glutCreateWindow("Simple");
